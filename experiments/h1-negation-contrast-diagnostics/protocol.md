@@ -42,10 +42,11 @@ ABSA-RTS diagnostics must remain evaluation-only and separated from training dat
 
 Run the notebook:
 
-- `experiments/h1-negation-contrast-diagnostics/code/h1_colab_runner.ipynb`
+- `experiments/h1-negation-contrast-diagnostics/code/h1_colab_runner_v2.ipynb`
 
 It includes:
 1. Project path setup for Colab.
-2. ABSA-RTS generation.
-3. A1 prediction-file generation (placeholder).
-4. A0/A1 evaluation and output inspection.
+2. Git sync (`git pull`) before execution.
+3. ABSA-RTS generation.
+4. A1 prediction-file generation (placeholder).
+5. A0/A1 evaluation and output inspection.

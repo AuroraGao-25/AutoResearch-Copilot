@@ -26,6 +26,7 @@ The proposal and early literature converge on the same gap: high benchmark score
 - Semantic Scholar API access is currently rate-limited in this environment; arXiv and CrossRef are reliable backups for bootstrap.
 - Robustness claims must remain deterministic-by-construction to avoid ambiguous metamorphic labels.
 - Standard SemEval performance must be tracked as a guardrail, not the optimization objective.
+- Negation templates must preserve semantic direction (`not good` => negative, `not bad` => positive); prior inversion can create artificial zero pass-rate.
 
 ## Open Questions
 

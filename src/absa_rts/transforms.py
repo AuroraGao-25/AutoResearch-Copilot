@@ -40,10 +40,10 @@ def make_negation_pair(aspect: str, sentiment: str) -> MetamorphicPair | None:
 
     aspect_phrase = _aspect_phrase(aspect)
     if source_sentiment == "positive":
-        src_adj, fup_adj = POS_ADJ, NEG_ADJ
+        src_adj, fup_adj = POS_ADJ, POS_ADJ
         followup_sentiment = "negative"
     else:
-        src_adj, fup_adj = NEG_ADJ, POS_ADJ
+        src_adj, fup_adj = NEG_ADJ, NEG_ADJ
         followup_sentiment = "positive"
 
     source_text = f"The {aspect_phrase} is {src_adj}."
