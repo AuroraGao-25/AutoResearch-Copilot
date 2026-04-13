@@ -1,0 +1,40 @@
+{
+  "models": [
+    {
+      "model": "A0",
+      "accuracy": 0.7631578947368421,
+      "macro_f1": 0.8321678321678321,
+      "metamorphic_pass_rate": 0.5263157894736842,
+      "category_metrics": {
+        "negation": {
+          "accuracy": 0.5,
+          "macro_f1": 0.3323013415892673,
+          "metamorphic_pass_rate": 0.0
+        },
+        "contrast": {
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "metamorphic_pass_rate": 1.0
+        }
+      }
+    },
+    {
+      "model": "A1",
+      "accuracy": 0.6842105263157895,
+      "macro_f1": 0.6551226551226551,
+      "metamorphic_pass_rate": 0.5263157894736842,
+      "category_metrics": {
+        "negation": {
+          "accuracy": 0.4444444444444444,
+          "macro_f1": 0.30501089324618735,
+          "metamorphic_pass_rate": 0.0
+        },
+        "contrast": {
+          "accuracy": 0.9,
+          "macro_f1": 0.8518518518518517,
+          "metamorphic_pass_rate": 1.0
+        }
+      }
+    }
+  ]
+}

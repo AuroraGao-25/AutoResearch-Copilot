@@ -1,0 +1,39 @@
+case_id,pair_id,domain,category,relation_type,is_followup,aspect,text,gold_sentiment
+r001_negation_0001_src,r001_negation_0001,restaurants,negation,flip,0,battery,The battery is good.,positive
+r001_negation_0001_fup,r001_negation_0001,restaurants,negation,flip,1,battery,The battery is not bad.,negative
+r001_contrast_0002_src,r001_contrast_0002,restaurants,contrast,invariant,0,battery,The battery is good.,positive
+r001_contrast_0002_fup,r001_contrast_0002,restaurants,contrast,invariant,1,battery,"The ambience is bad, but the battery is good.",positive
+r002_negation_0003_src,r002_negation_0003,restaurants,negation,flip,0,screen,The screen is bad.,negative
+r002_negation_0003_fup,r002_negation_0003,restaurants,negation,flip,1,screen,The screen is not good.,positive
+r002_contrast_0004_src,r002_contrast_0004,restaurants,contrast,invariant,0,screen,The screen is bad.,negative
+r002_contrast_0004_fup,r002_contrast_0004,restaurants,contrast,invariant,1,screen,"The ambience is good, but the screen is bad.",negative
+r003_negation_0005_src,r003_negation_0005,restaurants,negation,flip,0,service,The service is good.,positive
+r003_negation_0005_fup,r003_negation_0005,restaurants,negation,flip,1,service,The service is not bad.,negative
+r003_contrast_0006_src,r003_contrast_0006,restaurants,contrast,invariant,0,service,The service is good.,positive
+r003_contrast_0006_fup,r003_contrast_0006,restaurants,contrast,invariant,1,service,"The ambience is bad, but the service is good.",positive
+r004_negation_0007_src,r004_negation_0007,restaurants,negation,flip,0,price,The price is bad.,negative
+r004_negation_0007_fup,r004_negation_0007,restaurants,negation,flip,1,price,The price is not good.,positive
+r004_contrast_0008_src,r004_contrast_0008,restaurants,contrast,invariant,0,price,The price is bad.,negative
+r004_contrast_0008_fup,r004_contrast_0008,restaurants,contrast,invariant,1,price,"The ambience is good, but the price is bad.",negative
+r005_negation_0009_src,r005_negation_0009,restaurants,negation,flip,0,keyboard,The keyboard is good.,positive
+r005_negation_0009_fup,r005_negation_0009,restaurants,negation,flip,1,keyboard,The keyboard is not bad.,negative
+r005_contrast_0010_src,r005_contrast_0010,restaurants,contrast,invariant,0,keyboard,The keyboard is good.,positive
+r005_contrast_0010_fup,r005_contrast_0010,restaurants,contrast,invariant,1,keyboard,"The ambience is bad, but the keyboard is good.",positive
+r006_negation_0011_src,r006_negation_0011,restaurants,negation,flip,0,touchpad,The touchpad is bad.,negative
+r006_negation_0011_fup,r006_negation_0011,restaurants,negation,flip,1,touchpad,The touchpad is not good.,positive
+r006_contrast_0012_src,r006_contrast_0012,restaurants,contrast,invariant,0,touchpad,The touchpad is bad.,negative
+r006_contrast_0012_fup,r006_contrast_0012,restaurants,contrast,invariant,1,touchpad,"The ambience is good, but the touchpad is bad.",negative
+r007_contrast_0013_src,r007_contrast_0013,restaurants,contrast,invariant,0,camera,The camera is okay.,neutral
+r007_contrast_0013_fup,r007_contrast_0013,restaurants,contrast,invariant,1,camera,"The ambience is good, but the camera is okay.",neutral
+r008_negation_0014_src,r008_negation_0014,restaurants,negation,flip,0,speakers,The speakers is good.,positive
+r008_negation_0014_fup,r008_negation_0014,restaurants,negation,flip,1,speakers,The speakers is not bad.,negative
+r008_contrast_0015_src,r008_contrast_0015,restaurants,contrast,invariant,0,speakers,The speakers is good.,positive
+r008_contrast_0015_fup,r008_contrast_0015,restaurants,contrast,invariant,1,speakers,"The ambience is bad, but the speakers is good.",positive
+r009_negation_0016_src,r009_negation_0016,restaurants,negation,flip,0,performance,The performance is bad.,negative
+r009_negation_0016_fup,r009_negation_0016,restaurants,negation,flip,1,performance,The performance is not good.,positive
+r009_contrast_0017_src,r009_contrast_0017,restaurants,contrast,invariant,0,performance,The performance is bad.,negative
+r009_contrast_0017_fup,r009_contrast_0017,restaurants,contrast,invariant,1,performance,"The ambience is good, but the performance is bad.",negative
+r010_negation_0018_src,r010_negation_0018,restaurants,negation,flip,0,design,The design is good.,positive
+r010_negation_0018_fup,r010_negation_0018,restaurants,negation,flip,1,design,The design is not bad.,negative
+r010_contrast_0019_src,r010_contrast_0019,restaurants,contrast,invariant,0,design,The design is good.,positive
+r010_contrast_0019_fup,r010_contrast_0019,restaurants,contrast,invariant,1,design,"The ambience is bad, but the design is good.",positive
