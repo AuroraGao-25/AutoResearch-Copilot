@@ -29,4 +29,14 @@ H1 v2 currently shows saturated metamorphic pass rate (1.0), so we need a strong
 
 - Data-prep script: `src/absa_rts/build_augmentation.py`
 - Colab prep notebook: `experiments/h2-targeted-augmentation/code/h2_colab_prep.ipynb`
+- Ablation evaluator: `src/absa_rts/evaluate_h2_ablation.py`
+- Colab ablation notebook: `experiments/h2-targeted-augmentation/code/h2_colab_evaluate_ablation.ipynb`
+
+## Output Files for H2 Evaluation
+
+After generating prediction files for A1/C1/C2/C4, run the ablation notebook to produce:
+
+- `experiments/h2-targeted-augmentation/results/h2_summary.csv`
+- `experiments/h2-targeted-augmentation/results/h2_category_summary.csv`
+- `experiments/h2-targeted-augmentation/results/h2_metrics.json`
 

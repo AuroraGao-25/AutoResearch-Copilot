@@ -91,9 +91,9 @@ experiments:
   trajectory: []
 
 outer_loop:
-  cycle: 2
+  cycle: 3
   last_direction: deepen
-  last_reflection: "H1 v2 indicates metric saturation on synthetic templates (pass_rate=1.0). Next step is H2: build size-matched targeted augmentation sets and test on stronger real-model outputs."
+  last_reflection: "H2 dataset prep is complete and synced. Next execution target is ablation evaluation using real A1/C1/C2/C4 predictions with category-level deltas."
 
 workspace:
   findings: "findings.md"

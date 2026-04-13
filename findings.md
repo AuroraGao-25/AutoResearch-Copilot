@@ -15,6 +15,7 @@ The proposal and early literature converge on the same gap: high benchmark score
 - First experiment scaffold created under `experiments/h1-negation-contrast-diagnostics/`.
 - Execution pipeline implemented in `src/absa_rts/` with Colab notebook runner for direct cloud execution.
 - H1 v2 results from Colab: A0 metamorphic pass rate = 1.0, A1 metamorphic pass rate = 1.0 on current synthetic set.
+- H2 prep sets (C1/C2/C4) were generated and synced; ablation evaluation tooling is now ready for real model outputs.
 
 ## Patterns and Insights
 
