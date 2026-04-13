@@ -66,7 +66,7 @@ literature:
 hypotheses:
   - id: H1
     statement: "Prompt-only and standard QLoRA ABSA models show larger drops on negation and contrast than on non-adversarial SemEval slices."
-    status: active
+    status: inconclusive
     motivation: "Proposal identifies linguistic operators as likely failure hotspots hidden by aggregate F1."
     parent: null
     priority: high
@@ -91,9 +91,9 @@ experiments:
   trajectory: []
 
 outer_loop:
-  cycle: 1
+  cycle: 2
   last_direction: deepen
-  last_reflection: "Bootstrap complete. Start with H1 by building deterministic negation/contrast diagnostics and establishing A0/A1 baseline slices."
+  last_reflection: "H1 v2 indicates metric saturation on synthetic templates (pass_rate=1.0). Next step is H2: build size-matched targeted augmentation sets and test on stronger real-model outputs."
 
 workspace:
   findings: "findings.md"

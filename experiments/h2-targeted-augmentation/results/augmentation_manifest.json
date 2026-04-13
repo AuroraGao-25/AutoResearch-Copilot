@@ -1,0 +1,10 @@
+{
+  "seed": 17,
+  "single_category_size": 8,
+  "files": {
+    "c1_negation_only.jsonl": 8,
+    "c2_contrast_only.jsonl": 8,
+    "c4_all_categories.jsonl": 16
+  },
+  "notes": "C1/C2 are size-matched by design. C4 is the union."
+}

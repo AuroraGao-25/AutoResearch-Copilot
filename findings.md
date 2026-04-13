@@ -14,12 +14,14 @@ The proposal and early literature converge on the same gap: high benchmark score
 - High-priority hypothesis selected: H1 (negation/contrast vulnerability under A0/A1).
 - First experiment scaffold created under `experiments/h1-negation-contrast-diagnostics/`.
 - Execution pipeline implemented in `src/absa_rts/` with Colab notebook runner for direct cloud execution.
+- H1 v2 results from Colab: A0 metamorphic pass rate = 1.0, A1 metamorphic pass rate = 1.0 on current synthetic set.
 
 ## Patterns and Insights
 
 - CheckList-style behavioral evaluation is directly compatible with ABSA-RTS design.
 - Proposal-defined categories naturally map to testable metamorphic relations with expected invariance/flip behavior.
 - The contribution boundary is clearest when each augmentation category has a matching robustness target and ablation.
+- Current synthetic templates are too easy for the proxy evaluator and cannot reveal robustness boundary differences.
 
 ## Lessons and Constraints
 
@@ -33,6 +35,7 @@ The proposal and early literature converge on the same gap: high benchmark score
 - Which exact template families for negation and contrast maximize diagnostic signal while preserving label determinism?
 - How strongly will metamorphic pass rate correlate with macro-F1 by domain and category?
 - What tolerance margin on SemEval macro-F1 should define "no harmful regression" for A2 and C1-C4?
+- Will C1/C2 targeted augmentation show category-specific gains when evaluated with real model outputs instead of heuristic proxy predictions?
 
 ## Optimization Trajectory
 
