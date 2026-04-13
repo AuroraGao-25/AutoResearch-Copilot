@@ -1,0 +1,11 @@
+id,aspect,sentiment,text
+r001,battery,positive,The battery lasts all day.
+r002,screen,negative,The screen is dim outdoors.
+r003,service,positive,The service was quick and polite.
+r004,price,negative,The price is too high for what you get.
+r005,keyboard,positive,The keyboard feels comfortable.
+r006,touchpad,negative,The touchpad is unresponsive.
+r007,camera,neutral,The camera is fine for video calls.
+r008,speakers,positive,The speakers sound clear.
+r009,performance,negative,Performance drops when many apps are open.
+r010,design,positive,The design looks modern.

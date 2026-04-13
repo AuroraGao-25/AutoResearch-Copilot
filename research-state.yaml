@@ -1,0 +1,104 @@
+project:
+  title: "Beyond F1: Diagnostic Test Suites and Targeted Instruction Tuning for Robust ABSA"
+  question: "How can diagnostic robustness testing plus targeted instruction augmentation improve ABSA reliability beyond aggregate F1?"
+  status: active
+  started: "2026-04-13"
+  domain: "aspect-based sentiment analysis"
+
+literature:
+  key_papers:
+    - id: "pontiki2014semeval"
+      title: "SemEval-2014 Task 4: Aspect Based Sentiment Analysis"
+      authors: "Pontiki et al."
+      year: 2014
+      relevance: "Core benchmark and evaluation setting for ABSA."
+      url: "https://doi.org/10.3115/v1/s14-2004"
+    - id: "pontiki2015semeval"
+      title: "SemEval-2015 Task 12: Aspect Based Sentiment Analysis"
+      authors: "Pontiki et al."
+      year: 2015
+      relevance: "Domain extension and benchmark continuity."
+      url: "https://doi.org/10.18653/v1/s15-2082"
+    - id: "pontiki2016semeval"
+      title: "SemEval-2016 Task 5: Aspect Based Sentiment Analysis"
+      authors: "Pontiki et al."
+      year: 2016
+      relevance: "Expanded multilingual and domain ABSA benchmark framing."
+      url: "https://doi.org/10.18653/v1/s16-1002"
+    - id: "ribeiro2021checklist"
+      title: "Beyond Accuracy: Behavioral Testing of NLP Models with CheckList"
+      authors: "Ribeiro et al."
+      year: 2021
+      relevance: "Behavioral testing framework directly motivating ABSA-RTS."
+      url: "https://doi.org/10.24963/ijcai.2021/659"
+    - id: "scaria2023instructabsa"
+      title: "InstructABSA: Instruction Learning for Aspect Based Sentiment Analysis"
+      authors: "Scaria et al."
+      year: 2023
+      relevance: "Instruction-tuning baseline and data design patterns for ABSA."
+      url: "https://arxiv.org/abs/2302.08624"
+    - id: "simmering2023llmabsa"
+      title: "Large language models for aspect-based sentiment analysis"
+      authors: "Simmering and Huoviala"
+      year: 2023
+      relevance: "Prompting vs fine-tuning trade-offs and error patterns."
+      url: "https://arxiv.org/abs/2310.18025"
+    - id: "hu2021lora"
+      title: "LoRA: Low-Rank Adaptation of Large Language Models"
+      authors: "Hu et al."
+      year: 2021
+      relevance: "Parameter-efficient adaptation foundation."
+      url: "https://arxiv.org/abs/2106.09685"
+    - id: "dettmers2023qlora"
+      title: "QLoRA: Efficient Finetuning of Quantized LLMs"
+      authors: "Dettmers et al."
+      year: 2023
+      relevance: "Memory-efficient fine-tuning path for 7B-class models on limited GPU."
+      url: "https://arxiv.org/abs/2305.14314"
+  open_problems:
+    - "Aggregate metrics hide category-specific brittleness in ABSA."
+    - "Few robust benchmarks explicitly test deterministic metamorphic relations for ABSA ASC."
+    - "Limited ablation evidence tying targeted augmentation categories to specific robustness gains."
+  evidence_gaps:
+    - "Robustness-oriented diagnostic suite with reproducible category taxonomy for Restaurants/Laptops."
+    - "Clear relationship between metamorphic pass rate and macro-F1 under targeted fine-tuning."
+
+hypotheses:
+  - id: H1
+    statement: "Prompt-only and standard QLoRA ABSA models show larger drops on negation and contrast than on non-adversarial SemEval slices."
+    status: active
+    motivation: "Proposal identifies linguistic operators as likely failure hotspots hidden by aggregate F1."
+    parent: null
+    priority: high
+  - id: H2
+    statement: "Targeted augmentation for one category primarily improves that category's metamorphic pass rate with limited transfer."
+    status: pending
+    motivation: "Category-linked ablations (C1-C3) are central to the thesis contribution."
+    parent: null
+    priority: high
+  - id: H3
+    statement: "All-category augmentation improves robustness while keeping standard SemEval performance within an acceptable margin of A1."
+    status: pending
+    motivation: "Need to show robustness gains do not come at unacceptable utility cost."
+    parent: null
+    priority: high
+
+experiments:
+  proxy_metric: "Metamorphic pass rate on ABSA-RTS (overall and per-category), with macro-F1 on SemEval as guardrail"
+  baseline_value: null
+  best_value: null
+  total_runs: 0
+  trajectory: []
+
+outer_loop:
+  cycle: 1
+  last_direction: deepen
+  last_reflection: "Bootstrap complete. Start with H1 by building deterministic negation/contrast diagnostics and establishing A0/A1 baseline slices."
+
+workspace:
+  findings: "findings.md"
+  log: "research-log.md"
+  literature_dir: "literature/"
+  experiments_dir: "experiments/"
+  to_human_dir: "to_human/"
+  paper_dir: "paper/"

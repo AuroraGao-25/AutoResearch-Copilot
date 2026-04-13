@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABSA Robustness Research Progress</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; background: #0d1117; color: #e6edf3; line-height: 1.6; padding: 2rem; max-width: 1100px; margin: 0 auto; }
+        header { text-align: center; padding: 2.5rem 0 2rem; border-bottom: 1px solid #21262d; margin-bottom: 2rem; }
+        h1 { font-size: 2rem; margin-bottom: 0.4rem; }
+        .subtitle { color: #8b949e; max-width: 780px; margin: 0 auto 0.8rem; }
+        .meta { color: #8b949e; font-size: 0.9rem; }
+        .meta span { display: inline-block; margin: 0.25rem; padding: 0.15rem 0.6rem; border: 1px solid #21262d; border-radius: 12px; background: #161b22; }
+        section { margin-bottom: 2rem; }
+        h2 { font-size: 1.3rem; border-bottom: 1px solid #21262d; padding-bottom: 0.5rem; margin-bottom: 0.8rem; }
+        .card { background: #161b22; border: 1px solid #21262d; border-radius: 8px; padding: 1rem 1.2rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.8rem; }
+        .stat { background: #161b22; border: 1px solid #21262d; border-radius: 8px; padding: 0.8rem; text-align: center; }
+        .value { font-size: 1.6rem; font-weight: 700; color: #58a6ff; }
+        .label { font-size: 0.75rem; text-transform: uppercase; color: #8b949e; letter-spacing: 0.04em; }
+        ul { padding-left: 1.2rem; }
+        li { margin-bottom: 0.25rem; color: #c9d1d9; }
+        table { width: 100%; border-collapse: collapse; margin-top: 0.5rem; }
+        th, td { border-bottom: 1px solid #21262d; padding: 0.5rem; text-align: left; }
+        th { color: #8b949e; font-size: 0.8rem; text-transform: uppercase; }
+        .traj { background: #161b22; border: 1px solid #21262d; border-radius: 8px; padding: 1rem; text-align: center; }
+        footer { text-align: center; color: #6e7681; font-size: 0.8rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #21262d; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Beyond F1 for Robust ABSA</h1>
+        <p class="subtitle">Bootstrap completed: diagnostic-first research pipeline initialized for targeted instruction tuning and metamorphic robustness evaluation.</p>
+        <p class="meta">
+            <span>2026-04-13</span>
+            <span>0 experiments run</span>
+            <span>Status: active</span>
+        </p>
+    </header>
+
+    <section>
+        <div class="grid">
+            <div class="stat"><div class="value">H1-H3</div><div class="label">Hypotheses Defined</div></div>
+            <div class="stat"><div class="value">8</div><div class="label">Core Papers Curated</div></div>
+            <div class="stat"><div class="value">2</div><div class="label">Priority Categories</div></div>
+            <div class="stat"><div class="value">A0/A1</div><div class="label">Baseline Tracks</div></div>
+        </div>
+    </section>
+
+    <section>
+        <h2>What Was Set Up</h2>
+        <div class="card">
+            <ul>
+                <li>Initialized `research-state.yaml`, `research-log.md`, and `findings.md` from the proposal scope.</li>
+                <li>Created structured literature corpus under `literature/` with SemEval, CheckList, InstructABSA, LoRA, and QLoRA anchors.</li>
+                <li>Locked first confirmatory protocol: `experiments/h1-negation-contrast-diagnostics/protocol.md`.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Optimization Trajectory</h2>
+        <div class="traj">
+            <svg width="860" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Trajectory placeholder">
+                <rect x="0" y="0" width="860" height="300" fill="#0d1117"/>
+                <line x1="70" y1="240" x2="810" y2="240" stroke="#30363d"/>
+                <line x1="70" y1="40" x2="70" y2="240" stroke="#30363d"/>
+                <text x="430" y="30" fill="#8b949e" text-anchor="middle" font-size="14">No runs yet — trajectory begins after A0/A1 baseline evaluation</text>
+                <text x="430" y="275" fill="#6e7681" text-anchor="middle" font-size="12">Experiment index</text>
+                <text x="20" y="145" fill="#6e7681" text-anchor="middle" font-size="12" transform="rotate(-90,20,145)">Metamorphic pass rate</text>
+            </svg>
+        </div>
+    </section>
+
+    <section>
+        <h2>Near-Term Experimental Plan</h2>
+        <div class="card">
+            <table>
+                <thead>
+                    <tr><th>Phase</th><th>Action</th><th>Expected Output</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>H1</td><td>Build deterministic negation/contrast transformations</td><td>Category-labeled ABSA-RTS slices</td></tr>
+                    <tr><td>A0/A1 Eval</td><td>Run prompt-only and standard QLoRA baseline</td><td>Per-category pass-rate gap profile</td></tr>
+                    <tr><td>Outer Loop</td><td>Synthesize failure patterns</td><td>H2/H3 augmentation priorities</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer>Autoresearch progress report 001</footer>
+</body>
+</html>
